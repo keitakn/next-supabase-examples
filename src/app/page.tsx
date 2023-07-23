@@ -59,12 +59,20 @@ export default async function Index() {
                 <LogoutButton />
               </div>
             ) : (
-              <Link
-                href="/login"
-                className="py-2 px-4 rounded-md no-underline bg-btn-background hover:bg-btn-background-hover"
-              >
-                Login
-              </Link>
+              <div className="flex gap-4">
+                <Link
+                  href="/login"
+                  className="py-2 px-4 rounded-md no-underline bg-btn-background hover:bg-btn-background-hover"
+                >
+                  Login
+                </Link>
+                <Link
+                  href="/google/login"
+                  className="py-2 px-4 rounded-md no-underline bg-btn-background hover:bg-btn-background-hover"
+                >
+                  Googleでログイン
+                </Link>
+              </div>
             )}
           </div>
         </div>
